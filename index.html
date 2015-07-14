@@ -1,0 +1,88 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Jeff's personal dashboard">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jeff Chen</title>
+
+    <link rel="stylesheet" href="./bower_components/material-design-lite/material.min.css">
+    <script src="./bower_components/material-design-lite/material.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <div class="dashboard mdl-layout mdl-js-layout">
+
+      <main class="mdl-layout__content">
+        <div class="dashboard-grid mdl-grid">
+          <div class="mdl-card mdl-cell mdl-cell--8-col" id="github-card">
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text" data-bind="text: githubUsername">Github</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Mauris sagittis pellentesque lacus eleifend lacinia...
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                Get Started
+              </a>
+            </div>
+          </div>
+          <div class="mdl-card mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop">
+          </div>
+          <div class="mdl-card mdl-cell mdl-cell--12-col">
+          </div>
+        </div>
+        <footer class="mdl-mini-footer">
+          <div class="mdl-mini-footer--left-section">
+            <div class="mdl-logo">Title</div>
+            <ul class="mdl-mini-footer--link-list">
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Privacy & Terms</a></li>
+            </ul>
+          </div>
+          <div class="mdl-mini-footer--right-section">
+            <button class="mdl-mini-footer--social-btn">
+              <i class="fa fa-github fa-2x"></i>
+            </button>
+            <button class="mdl-mini-footer--social-btn">
+              <i class="fa fa-twitter fa-2x"></i>
+            </button>
+            <button class="mdl-mini-footer--social-btn">
+              <i class="fa fa-envelope fa-2x"></i>
+            </button>
+        </footer>
+      </main>
+    </div>
+
+    <script src="./bower_components/knockout/dist/knockout.js"></script>
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./bower_components/Chart.js/Chart.min.js"></script>
+    <script src="./bower_components/oauth-js/dist/oauth.min.js"></script>
+
+    <script src="./scripts/dashboard.js"></script>
+
+    <link rel="stylesheet" href="./styles/dashboard.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+  </body>
+</html>

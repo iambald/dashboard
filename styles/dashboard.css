@@ -1,0 +1,40 @@
+.layout-transparent {
+    background: url('../assets/transparent.jpg') center / cover;
+}
+
+.dashboard .mdl-layout__content {
+    padding-top: 230px;
+    position: relative;
+}
+
+.dashboard .mdl-mini-footer {
+    margin-top: 80px;
+    height: 120px;
+    padding: 40px;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.dashboard-grid {
+    max-width: 900px;
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+    flex-shrink: 0;
+}
+
+body::before {
+    background-image: url('../assets/transparent.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    content: '';
+    will-change: transform;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    position: fixed;;
+}

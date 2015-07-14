@@ -1,0 +1,24 @@
+{
+  "name": "dashboard",
+  "version": "0.0.0",
+  "authors": [
+    "Jeff Chen <jeffrey@cmu.edu>"
+  ],
+  "description": "A personal dashboard",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "material-design-lite": "~1.0.0",
+    "jquery": "~2.1.4",
+    "knockout": "~3.3.0",
+    "Chart.js": "~1.0.2",
+    "oauth-js": "~0.4.3"
+  }
+}
